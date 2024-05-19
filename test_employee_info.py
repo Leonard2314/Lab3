@@ -1,10 +1,7 @@
 import employee_info as info
 def test_get_employee_by_age_range():
-    min_age=22
-    max_age=33
-    names=["John","Jane","Mary","Mike"]
-    results=info.get_employees_by_age_range(min_age,max_age)
-    assert results==names
+    result=info.get_employees_by_age_range(22,24)
+    assert result==[{"name": "Mary", "age": 23, "department": "Marketing", "salary": 56000}]
 
 def test_calculate_average_salary():
     for x in info.employee_data:
